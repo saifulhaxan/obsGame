@@ -680,18 +680,22 @@ input.checkboxSquare {
 
 .lightYellow {
     background-color: #ffde65;
+    width: 40px !important;
 }
 
 .orangeColor {
     background-color: #f5ab49;
+    width: 40px !important;
 }
 
 .lightBlue {
     background-color: #cce5fb;
+    width: 40px !important;
 }
 
 .blueColor {
     background-color: #61ccff;
+    width: 40px !important;
 }
 
 .numberGenrator {
@@ -700,6 +704,31 @@ input.checkboxSquare {
     gap: 20px;
     margin-bottom: 25px;
     flex-wrap: wrap;
+}
+
+
+.q1, .q1:hover, .q1:active{
+    background-color: #ffde65;
+    border-color: #ffde65;
+}
+
+.q2, .q2:hover, .q2:active {
+    background-color: #f5ab49;
+    border-color: #f5ab49;
+}
+
+.q3, .q3:hover, .q3:active {
+    background-color: #cce5fb;
+    border-color: #cce5fb;
+}
+
+.q4, .q4:hover, .q4:active {
+    background-color: #61ccff;
+    border-color: #61ccff;
+}
+
+.numberGenrator button:focus {
+    background-color: #fff;
 }
 
 @media(min-width: 1170px) {

@@ -65,10 +65,10 @@ include('../layout/topBar.php');
             <div class="row mb-4">
                 <div class="col-md-12">
                     <div class="numberGenrator">
-                        <button type="button" class="btn btn-warning" onclick="generateRandomNumbers('firstXnumber', 'firstYnumber')">1 Generator</button>
-                        <button type="button" class="btn btn-warning" onclick="generateRandomNumbers('secondXnumber', 'secondYnumber')">2 Generator</button>
-                        <button type="button" class="btn btn-warning" onclick="generateRandomNumbers('thirdXnumber', 'thirdYnumber')">3 Generator</button>
-                        <button type="button" class="btn btn-warning" onclick="generateRandomNumbers('fourthXnumber', 'fourthYnumber')">4 Generator</button>
+                        <button type="button" class="btn btn-warning q1" onclick="generateRandomNumbers('firstXnumber', 'firstYnumber')">1 Generator</button>
+                        <button type="button" class="btn btn-warning q2" onclick="generateRandomNumbers('secondXnumber', 'secondYnumber')">2 Generator</button>
+                        <button type="button" class="btn btn-warning q3" onclick="generateRandomNumbers('thirdXnumber', 'thirdYnumber')">3 Generator</button>
+                        <button type="button" class="btn btn-warning q4" onclick="generateRandomNumbers('fourthXnumber', 'fourthYnumber')">4 Generator</button>
                         <button type="button" class="btn btn-danger clearBtn">Clear</button>
                     </div>
                 </div>
