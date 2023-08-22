@@ -184,17 +184,69 @@ function generateRandomNumbers(numberX, numberY) {
     }
   }
 
+
+
+
   var cells = document.getElementsByClassName(numberX);
   for (var i = 0; i < cells.length; i++) {
     cells[i].textContent = numbers[i];
   }
 
+    // Cycle through the random numbers and populate the cells
+
+    var cellIndex = 0;
+
+    jQuery('.gameBox').each(function () {
+
+      var randomNumber = numbers[cellIndex];
+
+      if(numberX == 'firstXnumber') {
+        jQuery(this).attr('data-q1-x', randomNumber);
+        cellIndex = (cellIndex + 1) % 10;
+      }
+      if(numberX == 'secondXnumber') {
+        jQuery(this).attr('data-q2-x', randomNumber);
+        cellIndex = (cellIndex + 1) % 10;
+      }
+      if(numberX == 'thirdXnumber') {
+        jQuery(this).attr('data-q3-x', randomNumber);
+        cellIndex = (cellIndex + 1) % 10;
+      }
+
+      if(numberX == 'fourthXnumber') {
+        jQuery(this).attr('data-q4-x', randomNumber);
+        cellIndex = (cellIndex + 1) % 10;
+      }
+
+    });
+
   var cells = document.getElementsByClassName(numberY);
   for (var i = 0; i < cells.length; i++) {
     cells[i].textContent = verticalNumber[i];
   }
+
+  jQuery('.gameBox').each(function () {
+    let verticalFirstCordinates = jQuery(this).parents('tr').find('.firstYnumber').text();
+    jQuery(this).attr('data-q1-y', verticalFirstCordinates);
+
+    // second y quard 
+
+    let verticalSecondCordinates = jQuery(this).parents('tr').find('.secondYnumber').text();
+    jQuery(this).attr('data-q2-y', verticalSecondCordinates);
+
+    // third y quard
+
+    let verticalThirdCordinates = jQuery(this).parents('tr').find('.thirdYnumber').text();
+    jQuery(this).attr('data-q3-y', verticalThirdCordinates);
+
+    // fourth y quard
+
+    let verticalFourthCordinates = jQuery(this).parents('tr').find('.fourthYnumber').text();
+    jQuery(this).attr('data-q4-y', verticalFourthCordinates);
+  })
+
 }
 
-jQuery('.clearBtn').click(function() {
+jQuery('.clearBtn').click(function () {
   jQuery('.clear').text(0);
 })
